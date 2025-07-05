@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         version="3.1"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+    <display-name>Dairy Management System</display-name>
+
+    <!-- RegisterComplaintServlet -->
+    <servlet>
+        <servlet-name>RegisterComplaintServlet</servlet-name>
+        <servlet-class>com.dairy.RegisterComplaintServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterComplaintServlet</servlet-name>
+        <url-pattern>/RegisterComplaintServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- LoginComplaintServlet -->
+    <servlet>
+        <servlet-name>LoginComplaintServlet</servlet-name>
+        <servlet-class>com.dairy.LoginComplaintServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginComplaintServlet</servlet-name>
+        <url-pattern>/LoginComplaintServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- SubmitComplaintServlet -->
+    <servlet>
+        <servlet-name>SubmitComplaintServlet</servlet-name>
+        <servlet-class>com.dairy.SubmitComplaintServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubmitComplaintServlet</servlet-name>
+        <url-pattern>/SubmitComplaintServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ResolveComplaintServlet -->
+    <servlet>
+        <servlet-name>ResolveComplaintServlet</servlet-name>
+        <servlet-class>com.dairy.ResolveComplaintServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ResolveComplaintServlet</servlet-name>
+        <url-pattern>/ResolveComplaintServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome file -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
+
